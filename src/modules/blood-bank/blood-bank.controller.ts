@@ -9,7 +9,7 @@ import { getPagination } from "../../utils/pagination";
 const GROUPS = ["A_POS", "A_NEG", "B_POS", "B_NEG", "AB_POS", "AB_NEG", "O_POS", "O_NEG"] as const;
 type Group = typeof GROUPS[number];
 
-// ── Donors ──────────────────────────────────────────────────────
+// ──----------------------- Donors ──────────────────────────────────────────────────────
 
 export const listDonors = async (req: Request, res: Response) => {
   const { tenantId } = req.auth!;
